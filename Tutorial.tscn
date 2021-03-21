@@ -1,0 +1,197 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Tutorial.gd" type="Script" id=1]
+[ext_resource path="res://gfx/background_gradient.png" type="Texture" id=2]
+[ext_resource path="res://fonts/Bungee-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://videos/1 Match Colorrr-1.webm" type="VideoStream" id=4]
+[ext_resource path="res://videos/2 Mistakee-1.webm" type="VideoStream" id=5]
+[ext_resource path="res://videos/33-1.webm" type="VideoStream" id=6]
+[ext_resource path="res://videos/4.webm" type="VideoStream" id=7]
+[ext_resource path="res://videos/5.webm" type="VideoStream" id=8]
+[ext_resource path="res://1_match_colorrr.webm" type="VideoStream" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 52
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 45
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 25
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+font_data = ExtResource( 3 )
+
+[node name="Tutorial" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background_gradient" type="TextureRect" parent="."]
+margin_left = -212.383
+margin_top = -100.083
+margin_right = 1835.62
+margin_bottom = 1099.92
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 293.427
+margin_top = 6.94036
+margin_right = 718.427
+margin_bottom = 59.9405
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.898039, 0.823529, 0.0313726, 1 )
+text = "Instructions"
+
+[node name="BackButton" type="Button" parent="."]
+margin_left = 436.06
+margin_top = 518.232
+margin_right = 576.06
+margin_bottom = 570.232
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 0.396078, 0.396078, 1 )
+text = "back"
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_left = 3.05861
+margin_top = 84.589
+margin_right = 199.059
+margin_bottom = 207.589
+size_flags_horizontal = 3
+stream = ExtResource( 4 )
+autoplay = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label1" type="Label" parent="."]
+margin_left = 207.629
+margin_top = 89.7985
+margin_right = 486.629
+margin_bottom = 202.799
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.298039, 0.298039, 0.298039, 1 )
+text = "Match Projecticle Color with wall color to score"
+autowrap = true
+
+[node name="VideoPlayer2" type="VideoPlayer" parent="."]
+margin_left = 3.20557
+margin_top = 221.757
+margin_right = 199.206
+margin_bottom = 344.757
+size_flags_horizontal = 3
+stream = ExtResource( 5 )
+autoplay = true
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 204.615
+margin_top = 229.981
+margin_right = 483.615
+margin_bottom = 342.981
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.298039, 0.298039, 0.298039, 1 )
+text = "Hitting diiferent colored wall will cause that wall to move inward"
+autowrap = true
+
+[node name="VideoPlayer3" type="VideoPlayer" parent="."]
+margin_left = 3.05858
+margin_top = 355.91
+margin_right = 199.059
+margin_bottom = 478.91
+size_flags_horizontal = 3
+stream = ExtResource( 6 )
+autoplay = true
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 205.975
+margin_top = 368.216
+margin_right = 484.975
+margin_bottom = 481.216
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.298039, 0.298039, 0.298039, 1 )
+text = "you lose if any of the walls touch the center circle"
+autowrap = true
+
+[node name="VideoPlayer4" type="VideoPlayer" parent="."]
+margin_left = 538.202
+margin_top = 83.0816
+margin_right = 734.202
+margin_bottom = 206.082
+size_flags_horizontal = 3
+stream = ExtResource( 7 )
+autoplay = true
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 738.104
+margin_top = 88.2912
+margin_right = 1017.1
+margin_bottom = 201.291
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.298039, 0.298039, 0.298039, 1 )
+text = "press a or left arrow key to rotate projectile anticlockwise"
+autowrap = true
+
+[node name="VideoPlayer5" type="VideoPlayer" parent="."]
+margin_left = 539.709
+margin_top = 227.786
+margin_right = 735.709
+margin_bottom = 350.786
+size_flags_horizontal = 3
+stream = ExtResource( 8 )
+autoplay = true
+
+[node name="Label5" type="Label" parent="."]
+margin_left = 747.148
+margin_top = 239.025
+margin_right = 1026.15
+margin_bottom = 352.025
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.298039, 0.298039, 0.298039, 1 )
+text = "press d or right arrow key to rotate projectile clockwise"
+autowrap = true
+
+[node name="VideoPlayer6" type="VideoPlayer" parent="."]
+visible = false
+margin_left = 539.709
+margin_top = 361.94
+margin_right = 735.709
+margin_bottom = 484.94
+size_flags_horizontal = 3
+stream = ExtResource( 9 )
+autoplay = true
+
+[node name="Label6" type="Label" parent="."]
+margin_left = 741.118
+margin_top = 371.671
+margin_right = 1020.12
+margin_bottom = 513.671
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.298039, 0.298039, 0.298039, 1 )
+text = "you can also Touch or click left or right side of screen to rotate projectile"
+autowrap = true
+
+[node name="Label7" type="Label" parent="."]
+visible = false
+margin_left = 484.795
+margin_top = 247.089
+margin_right = 763.797
+margin_bottom = 414.089
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "SORRY FOR No video. COULDNT GET VIDEO FILES TO PLAY on browser"
+autowrap = true
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="finished" from="VideoPlayer" to="." method="_on_VideoPlayer_finished"]
+[connection signal="finished" from="VideoPlayer2" to="." method="_on_VideoPlayer2_finished"]
+[connection signal="finished" from="VideoPlayer3" to="." method="_on_VideoPlayer3_finished"]
+[connection signal="finished" from="VideoPlayer4" to="." method="_on_VideoPlayer4_finished"]
+[connection signal="finished" from="VideoPlayer5" to="." method="_on_VideoPlayer5_finished"]
+[connection signal="finished" from="VideoPlayer6" to="." method="_on_VideoPlayer_finished"]

@@ -1,0 +1,173 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Info.gd" type="Script" id=1]
+[ext_resource path="res://gfx/background_gradient2.png" type="Texture" id=2]
+[ext_resource path="res://gfx/question_mark.png" type="Texture" id=3]
+[ext_resource path="res://gfx/GitHub-Mark-120px-plus.png" type="Texture" id=4]
+[ext_resource path="res://gfx/2021 Twitter logo - blue.png" type="Texture" id=5]
+[ext_resource path="res://gfx/ProgrammerIdiot.png" type="Texture" id=6]
+[ext_resource path="res://gfx/head_bg_less.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://fonts/Bungee-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://fonts/Bungee-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://fonts/Bungee-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 45
+font_data = SubResource( 5 )
+
+[node name="Info" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="background_gradient2" type="TextureRect" parent="."]
+margin_left = -0.221924
+margin_top = -1.22205
+margin_right = 2047.78
+margin_bottom = 1198.78
+texture = ExtResource( 2 )
+
+[node name="Description" type="Label" parent="."]
+margin_left = 38.4142
+margin_top = 10.0211
+margin_right = 971.414
+margin_bottom = 31.0211
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "I tried making a simple but challenging game"
+
+[node name="Feedback" type="Label" parent="."]
+margin_left = 36.744
+margin_top = 50.1055
+margin_right = 969.744
+margin_bottom = 71.1055
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "would love to hear your feedback"
+
+[node name="Score" type="Label" parent="."]
+margin_left = 37.0219
+margin_top = 89.6152
+margin_right = 471.022
+margin_bottom = 110.615
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "score 300 points to unlock a secret"
+
+[node name="Source" type="Label" parent="."]
+margin_left = 36.6174
+margin_top = 175.873
+margin_right = 470.617
+margin_bottom = 196.873
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "source is available here:"
+
+[node name="Label" type="Label" parent="Source"]
+margin_left = 3.61
+margin_top = 26.1725
+margin_right = 141.61
+margin_bottom = 40.1725
+text = "(Warning: It is a mess at the moment)"
+
+[node name="Twitter" type="Label" parent="."]
+margin_left = 35.3021
+margin_top = 291.743
+margin_right = 513.302
+margin_bottom = 312.743
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "follow me on twitter for updates:"
+
+[node name="Thanks" type="Label" parent="."]
+margin_left = 37.1647
+margin_top = 470.428
+margin_right = 923.165
+margin_bottom = 491.428
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Thanks to all foss developers whose tools allowed me to make this game"
+
+[node name="GWJ" type="Label" parent="."]
+margin_left = 40.3887
+margin_top = 400.036
+margin_right = 926.389
+margin_bottom = 421.036
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "made for godot wild jam #31"
+
+[node name="BackButton" type="Button" parent="."]
+margin_left = 461.722
+margin_top = 510.909
+margin_right = 601.722
+margin_bottom = 562.909
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 0.396078, 0.396078, 1 )
+text = "back"
+
+[node name="question_mark" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0.882353 )
+margin_left = 483.982
+margin_top = 86.6424
+margin_right = 505.982
+margin_bottom = 115.642
+texture = ExtResource( 3 )
+expand = true
+
+[node name="GitHub-Mark-120px-plus" type="TextureRect" parent="."]
+margin_left = 362.223
+margin_top = 129.036
+margin_right = 482.223
+margin_bottom = 249.036
+texture = ExtResource( 4 )
+
+[node name="2021 Twitter logo - blue" type="TextureRect" parent="."]
+margin_left = 498.49
+margin_top = 246.986
+margin_right = 624.49
+margin_bottom = 350.986
+texture = ExtResource( 5 )
+expand = true
+
+[node name="ProgrammerIdiot" type="TextureRect" parent="2021 Twitter logo - blue"]
+modulate = Color( 0.835294, 0.933333, 1, 1 )
+margin_left = 141.479
+margin_top = 19.0453
+margin_right = 481.479
+margin_bottom = 106.045
+texture = ExtResource( 6 )
+expand = true
+
+[node name="head_bg_less" type="TextureRect" parent="."]
+margin_left = 382.654
+margin_top = 327.183
+margin_right = 486.654
+margin_bottom = 466.183
+texture = ExtResource( 7 )
+expand = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 518.0
+margin_top = 97.0
+margin_right = 672.0
+margin_bottom = 111.0
+text = "I apologize in advance :)"
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="gui_input" from="2021 Twitter logo - blue" to="." method="_on_2021_Twitter_logo__blue_gui_input"]
+[connection signal="gui_input" from="2021 Twitter logo - blue/ProgrammerIdiot" to="." method="_on_ProgrammerIdiot_gui_input"]
+[connection signal="gui_input" from="head_bg_less" to="." method="_on_head_bg_less_gui_input"]
