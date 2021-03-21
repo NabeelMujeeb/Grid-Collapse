@@ -22,3 +22,8 @@ func _on_2021_Twitter_logo__blue_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		OS.shell_open("https://twitter.com/ProgrammerIdiot")
 
+
+
+func _on_GitHubMark120pxplus_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		OS.shell_open("https://github.com/NabeelMujeeb/Grid-Collapse")

@@ -168,6 +168,7 @@ margin_right = 672.0
 margin_bottom = 111.0
 text = "I apologize in advance :)"
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="gui_input" from="GitHub-Mark-120px-plus" to="." method="_on_GitHubMark120pxplus_gui_input"]
 [connection signal="gui_input" from="2021 Twitter logo - blue" to="." method="_on_2021_Twitter_logo__blue_gui_input"]
 [connection signal="gui_input" from="2021 Twitter logo - blue/ProgrammerIdiot" to="." method="_on_ProgrammerIdiot_gui_input"]
 [connection signal="gui_input" from="head_bg_less" to="." method="_on_head_bg_less_gui_input"]
